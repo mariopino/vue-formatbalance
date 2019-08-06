@@ -77,9 +77,9 @@ export default {
     },
     formatDot(amount) {
       if (isHex(amount)) {
-        return (parseInt(amount, 16) / 1000000000000000).toFixed(3);
+        return (parseInt(amount, 16) / 1000000000000000).toFixed(3) + ' DOT';
       } else {
-        return (amount / 1000000000000000).toFixed(3);
+        return (amount / 1000000000000000).toFixed(3) + ' DOT';
       }
     },
     _formatBalance(amount) {
