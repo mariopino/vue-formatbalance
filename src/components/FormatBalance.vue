@@ -16,11 +16,11 @@
         </tr>        
         <tr>
           <td><strong>Balance (formatDot)</strong></td>
-          <td>{{ formatDot(balance) }} DOT</td>
+          <td>{{ formatDot(balance) }}</td>
         </tr>
         <tr>
           <td><strong>Balance (formatBalance)</strong></td>
-          <td>{{ _formatBalance(balance) }} DOT</td>
+          <td>{{ _formatBalance(balance) }}</td>
         </tr>       
       </table>
     </p>
@@ -43,11 +43,11 @@
         </tr>          
         <tr>
           <td><strong>Balance (formatDot)</strong></td>
-          <td>{{ formatDot(balanceHex) }} DOT</td>
+          <td>{{ formatDot(balanceHex) }}</td>
         </tr> 
         <tr>
           <td><strong>Balance (formatBalance)</strong></td>
-          <td>{{ _formatBalance(balanceHex) }} DOT</td>
+          <td>{{ _formatBalance(balanceHex) }}</td>
         </tr>               
       </table>
     </p>
@@ -57,6 +57,8 @@
 
 <script>
 import { formatBalance, isHex } from '@polkadot/util';
+
+formatBalance.setDefaults({ decimals: 15, unit: 'DOT' });
 
 export default {
   data: function() {
