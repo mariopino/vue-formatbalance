@@ -2,8 +2,6 @@
 
 ## Output
 
-<h1>Polkadot util formatBalance function test</h1>
-
 ### DEC
 
 <p align="center"><table width="700"><tr><td width="300"><strong>Raw balance</strong></td><td>400437982902631</td></tr><tr><td><strong>Balance (formatNumber)</strong></td><td>400,437,982,902,631</td></tr><tr><td><strong>Balance (formatDot)</strong></td><td>0.400</td></tr><tr><td><strong>Balance (formatBalance)</strong></td><td>400.437m DOT</td></tr></table></p>
